@@ -1,0 +1,40 @@
+
+-------- TEST APIs -----------
+Register API - register with email, username, country code, mobile no, password, profile image (generate unique token)
+Login API - email/username, password (update unique token)
+Update Profile API - Gender, DOB(Format - DD/MM/YYYY),hobbies, current address, permanent address, Introduction video of 45 sec, thumbnail of video (token is required to call this API)
+Fetch Profile API - All details of user(token is required to call this API)
+All details
+Distance between current and permanent address
+Hobbies in array
+Video link and thumbnail in one array 
+5. Change Password API - old password, new password (token is required to call this API)
+send password change email to user with proper content/ template (Use mailtrap)
+destroy the current session, user have to login again
+6. Fetch all users API
+Fetch list of all users with their complete details
+
+
+jwt-auth secret [dEVftUhliEKMcwUp39O3AtFIKdLpphAlLIZpxWWnzfGorNOsjSt82y8jeUZjUm6H] set successfully.
+
+
+  // $id = $request->id;
+    //     $auth_token = $request->bearerToken();
+    //     // dd($auth_header);
+
+    //     $auth_header = explode(' ', $auth_token);
+    //     $token = $auth_header[0];
+    //     // // break up the token into its three parts
+    //     $token_parts = explode('.', $token);
+    //     $token_header = $token_parts[1];
+
+    //     // // base64 decode to get a json string
+    //     $token_header_json = base64_decode($token_header);
+    //     // dd($token_header_json);
+
+    //     $token_header_array = json_decode( $token_header_json, true);
+    //     //  dd($token_header_array);
+    //     // dd($user_token);
+
+    //     $user_token = $token_header_array['jti'];
+    // //   dd($user_token);
